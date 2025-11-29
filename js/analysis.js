@@ -116,7 +116,7 @@
             }
 
             try {
-                const response = await fetch('http://localhost:8000/analyze-message', {
+                const response = await fetch(window.API_ENDPOINT, {
                     method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
