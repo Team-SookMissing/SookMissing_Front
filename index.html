@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+
     <div class="Wrapper">
         <div class="titleWrapper">
             <img src="logo.png" alt="SOOKMISSING Logo" class="logo">
@@ -20,10 +22,19 @@
         <div class="inputWrapper">
             <h3>의심되는 문자를 입력하세요.</h3>
             <textarea id="inputText" placeholder="의심 문자를 여기에 입력하세요..."></textarea>
-            <button id="analyzeButton">분석하기</button>
+            <textarea id="inputPhone" placeholder="발신자 번호를 입력하세요..."></textarea>
+            <div style="margin-top:10px; display:flex; gap:8px;">
+                <button id="analyzeButton">분석하기</button>
+            </div>
 
-            <div id="result" class="resultArea"></div>
+            <div id="result" class="resultArea">
+                <div class="resultcontent" id="analysisCard">
+                    <!-- 분석 결과 -->
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="js/analysis.js"></script>
 
 </body>
