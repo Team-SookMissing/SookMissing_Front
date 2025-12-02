@@ -32,7 +32,8 @@
                     </div>
 
                 <div style="text-align:right">
-                    <div style="${badgeStyle}">${analysis.risk_level} \n 점수 ${analysis.total_score}</div>
+                    <div style="${badgeStyle}">${analysis.risk_level}</div>
+                    <div style="${badgeStyle}">점수 ${analysis.total_score}</div>
                         ${senderStatusHtml}
                     </div>
                 </div>
@@ -46,6 +47,11 @@
                     <br>
                     ${officialUrlHtml}
                         
+                </div>
+
+                <div>
+                    <strong>대처 방안</strong> <br/>
+                    <div class="solution-box">${escapeHtml(analysis.solution)}</div>
                 </div>
 
                 <!-- <div style="margin-top:10px; display:flex; gap:8px;">
